@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, InputGroup, Form } from "react-bootstrap";
+import { Button,  Form } from "react-bootstrap";
 import "./App.css";
 import CCard from "./CCard";
-// import body from './body';
-// import Card from './card';
+
 
 function App() {
   const [data, setData] = useState([]);
 
-  //  const url="https://jsonplaceholder.typicode.com/posts/1"
 
   const fetchPosts = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
